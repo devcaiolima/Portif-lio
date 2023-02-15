@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Crimson+Text:ital@1&family=Lexend+Deca&family=Noto+Serif+Ahom&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@700&family=Crimson+Text:ital@1&family=Lexend+Deca&family=Noto+Serif+Ahom&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+        <title>Caio Lima</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Caio Lima</div>
+            <div class="linhas">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+           <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="" class="active">Certificados</a>
+                    </li>
+                    <li>
+                        <a href="">Experiências</a>
+                    </li>
+                    <li>
+                        <a href="">Projeto</a>
+                    </li>
+                    <li>
+                        <a href="">Mais Sobre mim</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+           </nav>
+        </header>
+    
+        <div class="container-principal">
+            <p id="texto-principal">Olá,<br>
+            Sou Caio Lima,<br>
+            Desenvolvedor Web.</p>
+            <p id="texto-secundario">&#60;&#47;Desenvolvedor Front-End&#62;</p>
+        </div>
+
+        <script>
+            linhas = document.querySelector(".linhas");
+            linhas.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>

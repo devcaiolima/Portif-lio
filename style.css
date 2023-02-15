@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ 
+html {
+ background-color:	#363636;
+}
+
+.logo {
+    color:#66CDAA;
+    font-family: 'Noto Serif Ahom', serif;
+    font-size: 34px;
+    font-weight: 200;
+    text-shadow: 1px 3px #A020F0, 2px 2px #A020F0,
+    3px 3px #A020F0, 0 1px #A020F0;
+    position: relative;
+    top: 8px;
+    left: 20px;
+}
+
+.container-principal {
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+#texto-principal {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 0 100px;
+}
+
+.linhas{
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color:#66CDAA ;
+    background-color:#A020F0; 
+}
+
+.nav-bar ul li a.active {
+    color:#66CDAA ;
+    background-color:#A020F0; 
+}
+
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  .linhas {
+    display:block;
+    cursor: pointer;
+  }
+  .linhas .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: black ;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+        height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0 ;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav-bar ul li a {
+    margin-bottom:12px ;
+    
+  }
+}
